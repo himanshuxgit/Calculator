@@ -54,7 +54,6 @@ function handleButtonClick(event) {
 
 const calculator = document.getElementById('calculator');
 
-// Create buttons for numbers 1 to 9
 for (let i = 0; i <= 9; i++) {
   const button = document.createElement('button');
   button.className = 'col-span-1 bg-gray-300 p-4 rounded-lg text-center font-bold text-2xl';
@@ -63,7 +62,6 @@ for (let i = 0; i <= 9; i++) {
   calculator.appendChild(button);
 }
 
-// Add other buttons
 const operators = ['+', '-', '*', '/'];
 const otherButtons = ['=', '.', 'clear'];
 
@@ -77,7 +75,6 @@ const otherButtons = ['=', '.', 'clear'];
   calculator.appendChild(button);
 });
 
-// Add event listeners to each button
 const buttons = document.querySelectorAll('#calculator button');
 buttons.forEach(button => {
   button.addEventListener('click', handleButtonClick);
